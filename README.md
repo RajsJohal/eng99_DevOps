@@ -47,3 +47,9 @@ end
 - Read `r`, Write `w` and `x`
 - How to check permissions `ll`
 - Change permissions `chmod` permision `r` or `w` or `x` then filename (`chmod permission filename`)
+
+- find out all processes running `top`
+- how to `kill` a process, may require `sudo` for admin permission
+
+### Automate everything we have done manually
+- provision the steps of updating, upgrading and nginx installation
