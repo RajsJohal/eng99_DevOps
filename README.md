@@ -20,6 +20,8 @@ to upgrade and update the software
 
 **Linux commands**
 - `sudo apt-get update -y`
+- `sudo apt-get upgrade -y`
+- `sudo apt-get install nginx -y`
 ```
 # Creating a virtual machine with Linux Ubuntu 16.04
 # ubuntu/xenial64
