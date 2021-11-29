@@ -16,3 +16,34 @@ to upgrade and update the software
 - install nginx
 - added a Vagrant file with commands to initialise a VM
 - Provided a IP address to the VM to be able to access VM through a web browser
+- Install Ruby
+
+**Linux commands**
+- `sudo apt-get update -y`
+```
+# Creating a virtual machine with Linux Ubuntu 16.04
+# ubuntu/xenial64
+
+Vagrant.configure("2") do |config|
+ # choose the os/box/distro
+ config.vm.box = "ubuntu/xenial64"
+ config.vm.network "private_network", ip: "192.168.10.100"
+# vagrant destroy
+# vagrant up
+# vagrant reload
+end
+```
+- Who am I `uname -a`
+- Where am I `pwd` 
+- List dir or all `ls` or `ls -a`
+- Copy file `cp filename destination`
+- Cut or rename `mv filename destination`
+- Create file `touch filename`
+- create folder `mkdir foldername`
+- how to navigate `cd foldername` return step back `cd .. `
+- deleting file folders `rm -rf namefolder`
+
+**File Permissions**
+- Read `r`, Write `w` and `x`
+- How to check permissions `ll`
+- Change permissions `chmod` permision `r` or `w` or `x` then filename (`chmod permission filename`)
