@@ -120,3 +120,12 @@ If you wanted to find a specific word within a file you could run:
 Here we can read specific lines of a file by running the following commands:
 - Display first n lines from file `cat file | head -n` 
 - Display last n lines from file `cat file | tail -n`
+
+
+### Env Variables
+- how to check env variables `env` or `printenv key`
+- DB_HOST = database
+- we need to use `export` to create an environment variable (this is temporary)
+- make env var persistent
+- create a ~/.bash_profile, `nano ~/.bash_profile`, type `export name=Raj`
+- Everytime you open `vagrant ssh` the environment variable name will be persistent. `printenv name` will output `Raj`
