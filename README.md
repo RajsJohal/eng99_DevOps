@@ -55,10 +55,11 @@ The purpose of a development environment is to have a place for a developer to t
 ## Development Env
 
 - Install Vagrant
+- Install Ruby
 - install nginx
 - added a Vagrant file with commands to initialise a VM
 - Provided a IP address to the VM to be able to access VM through a web browser
-- Install Ruby
+
 
 **Linux commands**
 - `sudo apt-get update -y`
