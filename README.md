@@ -125,7 +125,27 @@ Here we can read specific lines of a file by running the following commands:
 ### Env Variables
 - how to check env variables `env` or `printenv key`
 - DB_HOST = database
-- we need to use `export` to create an environment variable (this is temporary)
+- we need to use `export key = value` to create an environment variable (this is temporary)
 - make env var persistent
 - create a ~/.bash_profile, `nano ~/.bash_profile`, type `export name=Raj`
+- then type `source ~/.bash_profile`
 - Everytime you open `vagrant ssh` the environment variable name will be persistent. `printenv name` will output `Raj`
+
+### Reverse Proxy with Nginx
+- We have our node app listending on port 3000 and we would like it to be avilable on port 80 which is the deault port for web browser
+```
+server {
+    listen 80;
+
+    server_name _;
+
+    location / {
+        proxy_pass http://localhost:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+```
